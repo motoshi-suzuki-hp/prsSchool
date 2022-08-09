@@ -1464,6 +1464,10 @@ footer {
         height: 100vw;
     }
 
+    .solid-location .wp-block-table table tbody tr td {
+        padding: 20px 15px;
+    }
+
 }
 
 
