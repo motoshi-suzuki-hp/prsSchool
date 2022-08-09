@@ -3,7 +3,7 @@
     <div class="fv">
         <img class="fvimg1" src="<?= get_template_directory_uri(); ?>/img/main.jpg" alt="main-img">
         <div class="fv-text">
-            <h2>磐田市内に3校展開</h2>
+            <h2>磐田市内に2校展開</h2>
             <b>私たちは<br><span>生徒の主体性と</span><span>本気で向き合う塾です。</span></b>
             <p>
                 常に子どもたちの「心」の状態を把握した上で、<br>ひとりひとりの現状にあった的確な学習指導を行います。
@@ -103,7 +103,11 @@
                         while( $the_query->have_posts() ) : $the_query->the_post(); ?>
                             <article class="news-wrap">
                                 <a href="<?php the_permalink(); ?>">
-                                    <img src="<?= get_template_directory_uri(); ?><?= catch_that_image(); ?>" alt="eye-catch">
+                                    <?php if(has_post_thumbnail()): ?>
+                                        <?php the_post_thumbnail(); ?>
+                                    <?php else: ?>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/blog.png" alt="eye-catch">
+                                    <?php endif; ?>
                                     <h3><?php the_title() ?></h3>
                                 </a>
                             </article>

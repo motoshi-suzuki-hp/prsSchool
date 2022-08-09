@@ -1,9 +1,8 @@
 <?php
 /*
-Template Name: Location
+Template Name: Covid
 */
 ?>
-
 
 <?php get_header(); ?>
 <?php
@@ -11,6 +10,7 @@ if (have_posts()) :
     while (have_posts()) :
         the_post();
 ?>
+
 <!-- 記事ヘッダー -->
 <div class="page-parts__header">
     <!-- 画像 -->
@@ -21,15 +21,19 @@ if (have_posts()) :
     </div>
 </div>
 
-
 <!-- 本文 -->
-<section class="solid-location">
-    <article class="page-parts__article">
+<section class="solid-covid">
+    <article class="covid-parts__article">
         <?php the_content(); ?>
     </article>
 </section>
+
+
 <?php
     endwhile;
 endif;
 ?>   
+
+
+
 <?php get_footer(); ?>

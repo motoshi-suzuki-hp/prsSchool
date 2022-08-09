@@ -40,7 +40,11 @@ Template Name: Archives
                             <a href="<?php the_permalink(); ?>">
 
                                 <time><?=get_the_date();?></time>
-                                <img src="<?= get_template_directory_uri(); ?><?= catch_that_image(); ?>" alt="eye-catch">
+                                <?php if(has_post_thumbnail()): ?>
+                                    <?php the_post_thumbnail(); ?>
+                                <?php else: ?>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/blog.png" alt="eye-catch">
+                                <?php endif; ?>
                                 <h3><?php the_title() ?></h3>
                             </a>
                     </article>

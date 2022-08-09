@@ -24,21 +24,21 @@
                                 <a href="<?= home_url() ?>">Home</a>
                             </li>
                             <li>
-                                <a href=""><span>コロナ対策と</span><span>方針</span></a>
+                                <a href="<?= home_url('/covid')?>">コロナ対策と方針</a>
                             </li>
                             <li>
-                                <a href="<?= home_url('/blog')?>"><span>新着</span><span>情報</span></a>
+                                <a href="<?= home_url('/blog')?>">新着情報</a>
                             </li>
                             <li class="has-child">
-                                <a href=""><span>各種</span><span>講座</span></a>
+                                <p>各種講座</p>
                                 <ul>
-                                    <li><a href="#">小学生講座</a></li>
-                                    <li><a href="#">中学生講座</a></li>
-                                    <li><a href="#">高校生講座</a></li>
+                                    <li><a href="<?= home_url('/primary')?>">小学生講座</a></li>
+                                    <li><a href="<?= home_url('/junior')?>">中学生講座</a></li>
+                                    <li><a href="<?= home_url('/high')?>">高校生講座</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="<?= home_url('/location')?>"><span>教室</span><span>案内</span></a>
+                                <a href="<?= home_url('/location')?>">教室案内</a>
                             </li>
                             <li id="contact_pc">
                                 <a href="<?= home_url('/contact') ?>"><span>よくある質問・</span><span>お問い合せ</span></a>
@@ -56,28 +56,28 @@
                     <nav id="menu_sp" class="menu_sp">
                         <ul class="menu-list_sp">
                             <li>
-                                <a href="">Home</a>
+                                <a href="<?= home_url()?>">Home</a>
                             </li>
                             <li>
-                                <a href="">コロナ対策と方針</a>
-                            </li>
-                            <li>
-                                <a href="">小学生講座</a>
-                            </li>
-                            <li>
-                                <a href="">中学生講座</a>
-                            </li>
-                            <li>
-                                <a href="">高校生講座</a>
-                            </li>
-                            <li>
-                                <a href="<?= home_url('/location')?>">教室案内</a>
+                                <a href="<?= home_url('/covid')?>">コロナ対策と方針</a>
                             </li>
                             <li>
                                 <a href="<?= home_url('/blog')?>">新着情報</a>
                             </li>
                             <li>
-                                <a href="">よくある質問・お問い合せ</a>
+                                <a href="<?= home_url('/primary')?>">小学生講座</a>
+                            </li>
+                            <li>
+                                <a href="<?= home_url('/junior')?>">中学生講座</a>
+                            </li>
+                            <li>
+                                <a href="<?= home_url('/high')?>">高校生講座</a>
+                            </li>
+                            <li>
+                                <a href="<?= home_url('/location')?>">教室案内</a>
+                            </li>
+                            <li>
+                                <a href="<?= home_url('/contact') ?>">よくある質問・お問い合せ</a>
                             </li>
                         </ul>
                     </nav>

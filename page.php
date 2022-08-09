@@ -15,9 +15,11 @@ if (have_posts()) :
 </div>
  
 <!-- 本文 -->
-<article class="page-parts__article">
-    <?php the_content(); ?>
-</article>
+<section class="solid-contact">
+    <article class="page-parts__article">
+        <?php the_content(); ?>
+    </article>
+</section>
 <?php
     endwhile;
 endif;

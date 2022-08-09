@@ -55,22 +55,8 @@ endif;
 
 ?>
 
-<!-- 記事内の一番目にある画像を取得する -->
-<?php
-function catch_that_image() {
-    global $post, $posts;
-    $first_img = '';
-    ob_start();
-    ob_end_clean();
-    $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
-    $first_img = $matches [1] [0];
-    if(empty($first_img)){
-        // 記事内で画像がなかったときのためのデフォルト画像を指定
-        $first_img = "/img/blog.png";
-    }
-    return $first_img;
-}
-?>
+
+
 
 <?php
    // 投稿画面でアイキャッチ画像を設定できるようにする
