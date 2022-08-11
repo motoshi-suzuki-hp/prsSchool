@@ -132,8 +132,57 @@
             </div> -->
         <!-- </div> -->
     </section>
+
     <section class="achievement">
-        
+        <div class="achievement-inner">
+            <div class="achievement-content">
+                <div class="subtitle">
+                    <h3>令和3年度の合格実績</h3>
+                </div>
+                <div class="achievement-tab">
+                    <ul class="tab">
+                        <li><a href="#national">国立大学</a></li>
+                        <li><a href="#personal">私立大学</a></li>
+                        <li><a href="#others">専門学校</a></li>
+                    </ul>
+                    <div id="national" class="area">
+                        <!-- <h2>国立大学</h2> -->
+                        <ul>
+                            <li>奈良女子大学 (文学部)</li>
+                            <li>信州大学 (教育学部)</li>
+                        </ul>
+                    </div>
+                    <div id="personal" class="area">
+                        <!-- <h2>私立大学</h2> -->
+                        <ul>
+                            <li>桜美林大学 (リベラルアーツ学群)</li>
+                            <li>関西大学 (社会学部 社会学科心理学専攻)</li>
+                            <li>京都女子大学 (家政学部 生活造形学科)</li>
+                            <li>京都女子大学 (文学部 英文学科)</li>
+                            <li>京都橘大学 (健康科学部 臨床検査学科)</li>
+                            <li>京都橘大学 (健康科学部 心理学科)</li>
+                            <li>京都文教大学 (臨床心理学部 深層心理学科)</li>
+                            <li>国際医療福祉大学 (赤坂心理・医療福祉マネジメント学部 心理学科)</li>
+                            <li>聖徳大学 (心理・福祉学部 心理学科)</li>
+                            <li>聖隷クリストファー大学 (リハビリテーション学部 作業療法学科)</li>
+                            <li>同志社大学 (文学部 英文学科)</li>
+                            <li>名古屋外国語大学 (現代国際学部 グローバルビジネス学科)</li>
+                            <li>日本女子大学 (家政学部 被服学科)</li>
+                            <li>名城大学 (理工学部 数学科)</li>
+                            <li>武庫川女子大学 (経営学部 経営学科)</li>
+                            <li>立命館大学 (理工学部 数理科学科)</li>
+                        </ul>
+                    </div>
+                    <div id="others" class="area">
+                        <!-- <h2>専門大学</h2> -->
+                        <ul>
+                            <li>静岡医療科学専門大学校 (理学療法学科)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+
 </main>
 <?php get_footer() ?>

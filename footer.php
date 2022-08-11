@@ -21,8 +21,7 @@
                     </p>
                     <p class="footer-map">地図は<a href="<?= home_url('/location')?>">こちら</a></p>
                     <div class="footer-tel">
-                        <i class="fa-solid fa-phone"></i>
-                        <a href="tel:0538-37-1880">0538-37-1880</a>
+                        <a href="tel:0538-37-1880"><i class="fa-solid fa-phone"></i>0538-37-1880</a>
                     </div>
                 </li>
                 <!-- <li>
@@ -45,8 +44,7 @@
                     </p>
                     <p class="footer-map">地図は<a href="">こちら</a></p>
                     <div class="footer-tel">
-                        <i class="fa-solid fa-phone"></i>
-                        <a href="tel:0538-37-7623">0538-37-7623</a>
+                        <a href="tel:0538-37-7623"><i class="fa-solid fa-phone"></i>0538-37-7623</a>
                     </div>
                 </li>
             </ul>
@@ -57,6 +55,8 @@
         </div>
     </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <?php wp_footer(); ?>
+
 </body>
 </html>

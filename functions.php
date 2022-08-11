@@ -1,18 +1,19 @@
 <?php
    function theme_enqueue_styles() {
-      wp_enqueue_style('style-style', get_template_directory_uri().'/style.css');
-      wp_enqueue_style('reset-style', get_template_directory_uri().'/reset.css');
-      
+      wp_enqueue_style('style-style', get_template_directory_uri().'/css/style.css');
+      wp_enqueue_style('reset-style', get_template_directory_uri().'/css/reset.css');
+      wp_enqueue_style('tab-style', get_template_directory_uri().'/css/tab.css');
    }
    add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 ?>
 
 <?php
    function theme_enqueue_scripts() {
-      wp_enqueue_script('hamburger-script', get_template_directory_uri().'/hamburger.js', array(), false, true);
-      wp_enqueue_script('header-script', get_template_directory_uri().'/pulldown.js', array(), false, true);
+      wp_enqueue_script('hamburger-script', get_template_directory_uri().'/js/hamburger.js', array(), false, true);
+      wp_enqueue_script('header-script', get_template_directory_uri().'/js/pulldown.js', array(), false, true);
       wp_enqueue_script('icon-script', 'https://kit.fontawesome.com/37c44e9cd8.js', array(), false, true);
-      wp_enqueue_script('tel-script', get_template_directory_uri().'/tel.js', array(), false, true);
+      wp_enqueue_script('tel-script', get_template_directory_uri().'/js/tel.js', array(), false, true);
+      wp_enqueue_script('tab-script', get_template_directory_uri().'/js/tab.js', array(), false, true);
    }
    add_action( 'wp_enqueue_scripts', 'theme_enqueue_scripts' );
 ?>
