@@ -3,9 +3,9 @@
     <div class="fv">
         <img class="fvimg1" src="<?= get_template_directory_uri(); ?>/img/main.jpg" alt="main-img">
         <div class="fv-text">
-            <h2>磐田市内に2校展開</h2>
-            <b>私たちは<br><span>生徒の主体性と</span><span>本気で向き合う塾です。</span></b>
-            <p>
+            <h2 class="fadeUpTrigger05">磐田市内に2校展開</h2>
+            <b class="fadeUpTrigger10">私たちは<br><span>生徒の主体性と</span><span>本気で向き合う塾です。</span></b>
+            <p class="fadeUpTrigger15">
                 常に子どもたちの「心」の状態を把握した上で、<br>ひとりひとりの現状にあった的確な学習指導を行います。
             </p>
         </div>
@@ -17,14 +17,14 @@
     <section class="about">
         <div class="about-inner">
             <div class="about-content">
-                <div class="subtitle">
+                <div class="subtitle fadeUpTrigger05">
                     <h3>PRSスクールの特徴</h3>
                     <!-- <img src="<?= get_template_directory_uri(); ?>/img/orange-line.svg" alt=""> -->
                 </div>
                 <!-- <div class="about-img">
                     <img class="fvimg2" src="<?= get_template_directory_uri(); ?>/img/prs.png" alt="prs">
                 </div> -->
-                <div class="about-text">
+                <div class="about-text fadeUpTrigger05">
                     <p>
                         カウンセラーのライセンスを取得した講師が 「学習指導」だけでなく「精神力」を高めるために何をすべきかを常にアドバイスしています。
                     </p>
@@ -36,7 +36,7 @@
                     </p>
                 </div>
                 <ul class="about-list">
-                    <li>
+                    <li class="fadeUpTrigger05">
                         <div class="about-list-content">
                             <div>
                                 <img src="<?= get_template_directory_uri(); ?>/img/smallclass.png" alt="smallclass">
@@ -46,7 +46,7 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li class=" fadeUpTrigger10">
                         <div class="about-list-content">
                             <div>
                                 <img src="<?= get_template_directory_uri(); ?>/img/up.jpg" alt="gakuryoku-up">
@@ -56,7 +56,7 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li class="fadeUpTrigger15">
                         <div class="about-list-content">
                             <div>
                                 <img src="<?= get_template_directory_uri(); ?>/img/kosyu.jpg" alt="kosyu">
@@ -67,7 +67,7 @@
                         </div>
                     </li>
 
-                    <li>
+                    <li class="fadeUpTrigger20">
                         <div class="about-list-content">
                             <div>
                                 <img src="<?= get_template_directory_uri(); ?>/img/follow.jpg" alt="after-follow">
@@ -85,7 +85,7 @@
         <!-- <div class="news-map-inner"> -->
             <div class="news-inner">
                 <div class="news-content">
-                    <div class="subtitle">
+                    <div class="subtitle fadeUpTrigger05">
                         <h3>新着情報・ブログ</h3>
                     <img src="<?= get_template_directory_uri(); ?>/img/orange-line.svg" alt="">
                     </div>
@@ -101,7 +101,7 @@
                     ?>
                     <?php if( $the_query->have_posts() ):
                         while( $the_query->have_posts() ) : $the_query->the_post(); ?>
-                            <article class="news-wrap">
+                            <article class="news-wrap fadeUpTrigger05">
                                 <a href="<?php the_permalink(); ?>">
                                     <?php if(has_post_thumbnail()): ?>
                                         <?php the_post_thumbnail(); ?>
@@ -136,14 +136,14 @@
     <section class="achievement">
         <div class="achievement-inner">
             <div class="achievement-content">
-                <div class="subtitle">
+                <div class="subtitle fadeUpTrigger05">
                     <h3>令和3年度の合格実績</h3>
                 </div>
                 <div class="achievement-tab">
                     <ul class="tab">
-                        <li><a href="#national">国立大学</a></li>
-                        <li><a href="#personal">私立大学</a></li>
-                        <li><a href="#others">専門学校</a></li>
+                        <li class="fadeUpTrigger05"><a href="#national">国立大学</a></li>
+                        <li class="fadeUpTrigger10"><a href="#personal">私立大学</a></li>
+                        <li class="fadeUpTrigger15"><a href="#others">専門学校</a></li>
                     </ul>
                     <div id="national" class="area">
                         <!-- <h2>国立大学</h2> -->

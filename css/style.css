@@ -1368,9 +1368,9 @@ footer {
     padding: 100px 0 50px;
 }
 
-.solid-class strong {
+/* .solid-class strong {
     background: linear-gradient(transparent 60%, #66ccff 60%);
-}
+} */
 
 .solid-class .wp-block-table {
     width: 100%;
@@ -1410,6 +1410,21 @@ footer {
 
 }
 
+@media screen and (max-width:768px) {
+    .solid-class .wp-block-table table tbody tr td {
+        padding: 20px 10px;
+    }
+
+    .solid-class .wp-block-table table tbody tr td:first-child {
+        padding: 20px;
+        width: calc(100vw/2.9);
+    }
+    .solid-class .wp-block-table table tbody tr td:last-child {
+        width: calc(100vw/3.5);
+    }
+
+
+}
 
 
 
