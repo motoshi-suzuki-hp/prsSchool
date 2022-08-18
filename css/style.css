@@ -732,7 +732,7 @@ section {
         width: 50%;
     }
 
-    .about-inner, .news-inner {
+    .about-inner, .news-inner, .achievement-inner {
         width: 90%;
     }
 }
@@ -1158,11 +1158,13 @@ footer {
 
     .page-parts__header-title, .single-parts__header-title {
         position: absolute;
-        top: 75%;
-        left: 40%;
+        top: 65%;
+        left: 30%;
         transform: translateY(-50%) translateX(-50%);
-        font-size: calc(100vw/15);
+        font-size: calc(100vw/17);
     }
+
+
 
 
     .page-parts__article, .covid-parts__article, .single-parts__article, .class-parts__article {
@@ -1265,6 +1267,10 @@ footer {
         
         font-size: calc(100vw/30);
     }
+
+    .solid-covid p {
+        font-size: 15px;
+    }
     
 }
 
@@ -1342,6 +1348,13 @@ footer {
     }
 }
 
+@media screen and (max-width:768px) {
+    .solid-news h4 {
+        font-size: 15px;
+        font-weight: 500;
+    }
+}
+
 .pagenation {
     margin-top: 25px;
     text-align: center;
@@ -1411,16 +1424,30 @@ footer {
 }
 
 @media screen and (max-width:768px) {
+    .solid-class {
+        padding: 50px 0;
+    }
+
+    .solid-class h3 {
+        margin-top: 50px;
+        font-size: calc(100vw/17);
+    }
+
     .solid-class .wp-block-table table tbody tr td {
         padding: 20px 10px;
     }
 
     .solid-class .wp-block-table table tbody tr td:first-child {
-        padding: 20px;
-        width: calc(100vw/2.9);
+        padding: 13px;
+        width: calc(100vw/3.4);
     }
     .solid-class .wp-block-table table tbody tr td:last-child {
-        width: calc(100vw/3.5);
+        padding: 10px;
+        width: calc(100vw/2.7);
+    }
+
+    .solid-class p {
+        font-size: 15px;
     }
 
 
@@ -1509,6 +1536,8 @@ footer {
         height: calc(100vw/3);
     }
 
+
+
 }
 
 @media screen and (max-width:768px) {
@@ -1539,6 +1568,9 @@ footer {
         padding: 20px 15px;
     }
 
+    .solid-location p {
+        font-size: 15px;
+    }
 }
 
 
@@ -1669,3 +1701,12 @@ footer {
     max-width: 850px;
 }
 .screen-reader-response{display: none;}
+
+@media screen and (max-width:768px) {
+    .solid-contact {
+        padding: 50px 0 50px;
+    }
+    .solid-contact p {
+        font-size: 15px;
+    }
+}

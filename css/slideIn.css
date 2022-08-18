@@ -8,6 +8,7 @@
     background-size: 0 60%; /* '30%'の部分にマーカーの太さを記入 */
     transition: all 1s ease-in-out; /* マーカーを引く速度を調整 */
     font-weight: bold; /* ついでに太字にしたい場合 */
+    width: fit-content;
 }
 
 /* アニメーション発火時 */

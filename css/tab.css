@@ -4,7 +4,7 @@
 	display: flex;
 	flex-wrap: wrap;
 
-    
+    /* width: 100%; */
 }
 .tab li a{
 	display: block;

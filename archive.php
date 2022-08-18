@@ -10,10 +10,13 @@ Template Name: Archives
 <!-- 記事ヘッダー -->
 <div class="page-parts__header">
     <!-- 画像 -->
-    <?php the_post_thumbnail('full'); ?>
+    <picture>
+        <source srcset="<?= get_template_directory_uri(); ?>/img/blog-header2.jpg"  media="(min-width: 768px)"/>
+        <img src="<?= get_template_directory_uri(); ?>/img/blog-header_sp.jpg" alt="blog" />
+    </picture>
     <!-- タイトル -->
     <div class="page-parts__header-title">
-        <h2><?php the_title(); ?></h2>
+        <h2 class="fadeUpTrigger05 fadeUp05"><?php the_title(); ?></h2>
     </div>
 </div>
 
@@ -22,7 +25,7 @@ Template Name: Archives
 <section class="solid-news">
     <div class="news-inner">
         <div class="news-content">
-            <h3 class="solid-subtitle"><?php the_title(); ?></h3>
+            <h3 class="solid-subtitle fadeUpTrigger10 fadeUp10"><?php the_title(); ?></h3>
             <?php
             $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
             $the_query = new WP_Query( array(
@@ -35,7 +38,7 @@ Template Name: Archives
             ?>
             <?php if ($the_query->have_posts()): ?>
                 <?php while ($the_query ->have_posts()): $the_query->the_post(); ?>
-                    <article class="news-wrap">
+                    <article class="news-wrap fadeUpTrigger15 fadeUp15">
                             <a href="<?php the_permalink(); ?>">
 
                                 <time><?=get_the_date();?></time>
@@ -44,7 +47,7 @@ Template Name: Archives
                                 <?php else: ?>
                                     <img src="<?php echo get_template_directory_uri(); ?>/img/blog.png" alt="eye-catch">
                                 <?php endif; ?>
-                                <h3><?php the_title() ?></h3>
+                                <h4><?php the_title() ?></h4>
                             </a>
                     </article>
                 <?php endwhile ?>

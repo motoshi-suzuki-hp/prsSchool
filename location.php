@@ -14,17 +14,20 @@ if (have_posts()) :
 <!-- 記事ヘッダー -->
 <div class="page-parts__header">
     <!-- 画像 -->
-    <?php the_post_thumbnail('full'); ?>
+    <picture>
+        <source srcset="<?= get_template_directory_uri(); ?>/img/location-header2.jpg"  media="(min-width: 768px)"/>
+        <img src="<?= get_template_directory_uri(); ?>/img/location-header_sp.jpg" alt="class" />
+    </picture>
     <!-- タイトル -->
     <div class="page-parts__header-title">
-        <h2><?php the_title(); ?></h2>
+        <h2 class="fadeUpTrigger05 fadeUp05"><?php the_title(); ?></h2>
     </div>
 </div>
 
 
 <!-- 本文 -->
 <section class="solid-location">
-    <article class="page-parts__article">
+    <article class="page-parts__article fadeUpTrigger10 fadeUp10">
         <?php the_content(); ?>
     </article>
 </section>
