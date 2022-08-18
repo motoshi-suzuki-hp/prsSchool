@@ -62,8 +62,6 @@ endif;
 ?>
 
 
-
-
 <?php
    // 投稿画面でアイキャッチ画像を設定できるようにする
    function custom_theme_setup(){
@@ -80,4 +78,3 @@ endif;
    }
    add_action('template_redirect', 'redirect_404');
 ?>
-
