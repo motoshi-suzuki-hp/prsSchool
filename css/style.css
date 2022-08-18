@@ -822,6 +822,8 @@ section {
         text-align: center;
     }
 
+
+
     .about-list li img {
         display: block;
         width: 26%;
@@ -830,9 +832,9 @@ section {
     }
 
     .about-list li h3 {
-        font-size: calc(100vw/22);
+        font-size: calc(100vw/23);
         font-weight: bold;
-        margin: 15px 20px 15px 30px;
+        margin: 15px 10px;
     }
 
     .about-list li p {
