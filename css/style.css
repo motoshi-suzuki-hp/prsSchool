@@ -1467,7 +1467,7 @@ footer {
 
 
 
-.solid-location .wp-container-1 {
+.solid-location .wp-container-1, .solid-location .wp-container-3 {
     padding: 0 150px 75px;
 }
 
